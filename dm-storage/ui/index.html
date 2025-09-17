@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Storage Access</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrap" class="hidden">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="title">
+            <span class="dot"></span>
+            Storage Access
+          </div>
+          <button id="btnClose" class="btn ghost">✕</button>
+        </div>
+        <div class="panel-body">
+          <div class="row two">
+            <div class="col">
+              <div class="label">Owner CID</div>
+              <div id="owner" class="mono"></div>
+            </div>
+            <div class="col">
+              <div class="label">Grant Access</div>
+              <div class="input-row">
+                <input id="friend" type="text" placeholder="Enter Player ID or CID" />
+                <button id="btnAdd" class="btn lime">Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="label">Allowed CIDs</div>
+            <div id="list" class="grid"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+  </html>
