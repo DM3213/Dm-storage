@@ -6,7 +6,7 @@ Config.Framework = Config.Framework or 'auto'
 -- Inventory: Only ox_inventory is supported
 Config.Inventory  = 'ox_inventory'
 
--- Target: 'ox_target' | 'qb-target' | 'auto'
+-- Target: 'ox_target' | 'qb-target' | 'auto' 
 Config.Target     = Config.Target or 'auto'
 
 -- Helpers (client/server)
