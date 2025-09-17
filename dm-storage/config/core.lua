@@ -3,7 +3,7 @@ Config = Config or {}
 -- Auto-detect by default; you can force any value: 'QBCore' | 'ESX' | 'Qbox' | 'standalone'
 Config.Framework = Config.Framework or 'auto'
 
--- Inventory: Only ox_inventory is supported
+-- Inventory: Only ox_inventory is supported 
 Config.Inventory  = 'ox_inventory'
 
 -- Target: 'ox_target' | 'qb-target' | 'auto'
