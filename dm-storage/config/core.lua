@@ -3,8 +3,8 @@ Config = Config or {}
 -- Auto-detect by default; you can force any value: 'QBCore' | 'ESX' | 'Qbox' | 'standalone'
 Config.Framework = Config.Framework or 'auto'
 
--- Inventories: 'ox_inventory' | 'qb' | 'qs' | 'ps' | 'auto'
-Config.Inventory  = Config.Inventory or 'auto'
+-- Inventory: Only ox_inventory is supported
+Config.Inventory  = 'ox_inventory'
 
 -- Target: 'ox_target' | 'qb-target' | 'auto'
 Config.Target     = Config.Target or 'auto'
@@ -19,12 +19,8 @@ function Config.DetectFramework()
 end
 
 function Config.DetectInventory()
-    if Config.Inventory ~= 'auto' then return Config.Inventory end
-    if GetResourceState('ox_inventory') == 'started' then return 'ox_inventory' end
-    if GetResourceState('qb-inventory') == 'started' then return 'qb' end
-    if GetResourceState('qs-inventory') == 'started' then return 'qs' end
-    if GetResourceState('ps-inventory') == 'started' then return 'ps' end
-    return 'none'
+    -- Always use ox_inventory
+    return 'ox_inventory'
 end
 
 function Config.DetectTarget()
