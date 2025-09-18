@@ -26,35 +26,35 @@ Items (ox_inventory)
 Paste this snippet into `[ox]/ox_inventory/data/items.lua` inside the items table.
 
 ```
-['storage_small'] = {
-  label = 'Small Storage',
-  weight = 0,         -- weight of the item itself
-  stack = false,      -- keep unique so it can be consumed
-  close = true,
-  consume = 1,        -- remove item on placement; set to 0 if you don’t want to consume
-  description = 'Place a small storage container (50 slots, 1000 weight stash).',
-  client = { export = 'dm-storage.useStorageSmall' },
-},
+    ['storage_small'] = {
+        label = 'Small Storage',
+        weight = 0,
+        stack = false,
+        close = true,
+        consume = 1,
+        description = 'Place a small storage (50 slots, 1000 weight stash).',
+        server = { export = 'dm-storage.useStorageSmall' },
+    },
 
-['storage_medium'] = {
-  label = 'Medium Storage',
-  weight = 0,
-  stack = false,
-  close = true,
-  consume = 1,
-  description = 'Place a medium storage container (100 slots, 2000 weight stash).',
-  client = { export = 'dm-storage.useStorageMedium' },
-},
+    ['storage_medium'] = {
+        label = 'Medium Storage',
+        weight = 0,
+        stack = false,
+        close = true,
+        consume = 1,
+        description = 'Place a medium storage (100 slots, 2000 weight stash).',
+        server = { export = 'dm-storage.useStorageMedium' },
+    },
 
-['storage_large'] = {
-  label = 'Large Storage',
-  weight = 0,
-  stack = false,
-  close = true,
-  consume = 1,
-  description = 'Place a large storage container (150 slots, 4000 weight stash).',
-  client = { export = 'dm-storage.useStorageLarge' },
-},
+    ['storage_large'] = {
+        label = 'Large Storage',
+        weight = 0,
+        stack = false,
+        close = true,
+        consume = 1,
+        description = 'Place a large storage (150 slots, 4000 weight stash).',
+        server = { export = 'dm-storage.useStorageLarge' },
+    },
 ```
 
 Notes
