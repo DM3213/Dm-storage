@@ -9,7 +9,7 @@ It supports both player-placed props (using items) and admin-created storages wi
 
 Player storage props:
 
-Use items (storage_small, storage_medium, storage_large) to spawn storage props.
+Use items (storage_small, storage_medium, storage_large) to spawn storage props. 
 
 Placement preview with object_gizmo (if installed) or auto-place fallback.
 
